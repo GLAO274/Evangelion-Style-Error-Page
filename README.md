@@ -2,7 +2,7 @@
 
 Simple Evangelion-style error pages using CSS and JS.
 
-Example page: [LINK](https://glao274.github.io/Evangelion-Style-Hexagon-Warning-Error-Page/)
+Demo page: [LINK](https://glao274.github.io/Evangelion-Style-Hexagon-Warning-Error-Page/)
 
 Inspired from: [LINK](https://www.reddit.com/r/evangelion/comments/13ijtcw/error_page/)
 
@@ -14,7 +14,7 @@ Inspired from: [LINK](https://www.reddit.com/r/evangelion/comments/13ijtcw/error
 
 **/err/err.js -** JavaScript functions
 
-**/index.html -** Example page. HTML, CSS, and JS all in one file.&#x20;
+**/index.html -** Demo page. HTML, CSS, and JS all in one file.&#x20;
 
 **/400.html -** Error page for code 400: Bad request.
 

@@ -1,0 +1,146 @@
+body, .warning-text, .center-text {
+    user-select: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+svg {
+    position: absolute;
+    z-index: 1;
+}
+
+.hex {
+    fill: red;
+    stroke: black;
+    stroke-width: 2;
+}
+
+.inner-hex {
+    fill: none;
+    stroke: black;
+    stroke-width: 1;
+}
+
+.color-original {
+    fill: #ff0000;
+}
+
+.color-dark {
+    fill: #990000;
+}
+
+.color-black {
+    fill: #000000;
+}
+
+.warning-text {
+    fill: black;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-anchor: middle;
+    dominant-baseline: middle;
+}
+
+.hex-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.center-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.1vh;
+    z-index: 10;
+}
+
+.center-text h1 {
+    font-family: Arial, sans-serif;
+    font-size: 200px;
+    margin: 0;
+    letter-spacing: 7px;
+    color: white;
+    white-space: nowrap;
+}
+
+.center-text2 p {
+    font-family: Arial, sans-serif;
+    font-size: calc(4vw);
+    margin: 0;
+    white-space: nowrap;
+    max-width: 100vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: white;
+}
+
+#gliching {
+    animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+    2%, 64% {
+        transform: translate(2px, 0) skew(0deg);
+    }
+    4%, 60% {
+        transform: translate(-2px, 0) skew(0deg);
+    }
+    62% {
+        transform: translate(0, 0) skew(5deg);
+    }
+}
+
+#gliching:before,
+#gliching:after {
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+
+#gliching:before {
+    animation: glitchTop 1s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+    2%, 64% {
+        transform: translate(2px, -2px);
+    }
+    4%, 60% {
+        transform: translate(-2px, 2px);
+    }
+    62% {
+        transform: translate(13px, -1px) skew(-13deg);
+    }
+}
+
+#gliching:after {
+    animation: glitchBottom 1.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBottom {
+    2%, 64% {
+        transform: translate(-2px, 0);
+    }
+    4%, 60% {
+        transform: translate(-2px, 0);
+    }
+    62% {
+        transform: translate(-22px, 5px) skew(21deg);
+    }
+}

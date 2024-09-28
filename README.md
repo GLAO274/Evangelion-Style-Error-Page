@@ -1,4 +1,4 @@
-# Evangelion-Style-Error-Page
+# Evangelion-Style-Hexagon-Warning-Error-Page
 
 Simple Evangelion-style error pages using CSS and JS.
 

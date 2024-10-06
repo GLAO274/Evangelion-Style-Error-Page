@@ -2,7 +2,7 @@
 
 Simple Evangelion-style error pages using CSS and JS.
 
-![page showcase](https://raw.githubusercontent.com/GLAO274/Evangelion-Style-Hexagon-Warning-Error-Page/refs/heads/main/showcase.png)
+![page showcase](https://raw.githubusercontent.com/GLAO274/Evangelion-Style-Hexagon-Warning-Error-Page/refs/heads/main/showcase.gif)
 
 Demo page: [LINK](https://glao274.github.io/Evangelion-Style-Hexagon-Warning-Error-Page/)
 
